@@ -1,0 +1,9 @@
+-----BEGIN RGB CONTRACT-----
+Version: 0.11
+Terminating: yes
+
+rgb1testcontractid1234567890abcdef
+...
+(This is sample armored data)
+...
+-----END RGB CONTRACT-----

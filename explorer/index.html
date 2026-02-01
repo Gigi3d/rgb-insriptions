@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Sequence Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="space-background"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <div class="logo">
+            <span class="rgb-text">RGB</span>
+            <span class="sequence-text">SEQUENCE</span>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="label">Total Inscriptions</span>
+                <span class="value" id="total-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Latest Block</span>
+                <span class="value">828,941</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container" id="grid">
+            <!-- Cards will be injected here by app.js -->
+        </div>
+    </main>
+
+    <!-- Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
