@@ -308,7 +308,7 @@ function generateInscription() {
   container.innerHTML = `
     <h1 style="color:#00ffcc; text-align:center;">Ready for Inscription</h1>
     <p style="color:#ccc; text-align:center; margin-bottom:30px; font-family:var(--font-mono);">
-        Inscribe this lightweight pointer to reference the contract.
+        Inscribe this lightweight RGB Contract ID to reference the contract.
         <br><span style="color:#888; font-size:0.8em;">Optimization: Recursive Parent-Child Strategy (-95% Fees)</span>
     </p>
 
@@ -318,7 +318,7 @@ function generateInscription() {
     </div>
 
     <div style="background: rgba(0, 255, 204, 0.05); border-left: 3px solid #00ffcc; padding: 15px; font-size: 0.85em; margin-bottom: 30px; text-align:left; color:#ccc;">
-        <strong>Validity Check:</strong> This pointer references <code>${meta.id.substring(0, 20)}...</code> (Anchor).
+        <strong>Validity Check:</strong> This RGB Contract ID references <code>${meta.id.substring(0, 20)}...</code> (Anchor).
     </div>
 
     <div class="actions">
