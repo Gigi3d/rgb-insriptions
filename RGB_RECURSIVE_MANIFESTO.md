@@ -15,7 +15,7 @@ This minimal JSON payload represents the apex of Bitcoin asset engineering:
   "p": "rgb-21",
   "op": "min_inscribe",
   "parent": "rgb:wW5~6EXS-qexCE6o-CVeok2m-AhpgknE-8ol9Kfb-bnFEup4",
-  "idx": 818,
+  "asset": "Goddess GOAT #818",
   "ts": 1770013393553
 }
 ```

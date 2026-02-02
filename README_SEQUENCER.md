@@ -125,7 +125,7 @@ These are the lightweight recursive inscriptions distributed to holders. Rather 
       "p": "rgb-21",
       "op": "min_inscribe",
       "parent": "rgb:wW5...",
-      "idx": 818
+      "asset": "Goddess GOAT #818"
     }
     ```
 *   **Economic Profile:** Micro-transactional Operational expenditure (OpEx).

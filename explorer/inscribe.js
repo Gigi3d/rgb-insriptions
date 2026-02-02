@@ -298,7 +298,7 @@ function generateInscription() {
     "p": "rgb-21",
     "op": "min_inscribe",
     "parent": meta.id, // The Anchor (Contract ID)
-    "idx": 818,        // Mock index from example
+    "asset": meta.name || "Unknown Asset #001",
     "ts": Date.now()
   };
 

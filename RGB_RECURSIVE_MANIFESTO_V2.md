@@ -19,7 +19,7 @@ Look at this JSON. This is what you inscribe.
   "p": "rgb-21",
   "op": "min_inscribe",
   "parent": "rgb:wW5~6EXS... (The Contract)",
-  "idx": 818
+  "asset": "Goddess GOAT #818"
 }
 ```
 
