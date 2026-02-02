@@ -1,7 +1,7 @@
 [
   {
     "rgb_number": 19,
-    "inscription_id": "525bc9838eb6e620c5795307c1060a881b12dadbeca0036ecf37ba8ac08c2851i0",
+    "inscription_id": "d750dab15de1b6f78de5493a6234a71f30fc03a4248ceee611944b2c95d2effdi0",
     "contract_type": "RGB21 (UDA)",
     "description": "Standard fungible token for utility access.",
     "supply": 1,
@@ -9,15 +9,15 @@
   },
   {
     "rgb_number": 18,
-    "inscription_id": "ed88e301cbc92c8fe4e9be53b953bc9aa4a684a1edb6e675f33acf8c1feee976i0",
+    "inscription_id": "e6bd5c8caf5d943667b80d00f8c1a86b3595cc2d9e51022ccff6df7f9b4e5582i0",
     "contract_type": "RGB20 (Fungible)",
-    "description": "A unique digital asset representing an ancient artifact.",
+    "description": "A collectible trading card series, 1st edition.",
     "supply": 1000000,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 17,
-    "inscription_id": "b56b5c687e70772f6c900c71927b7ec7501a4a8a2c51a061becefe704d31d3c3i0",
+    "inscription_id": "e219f06eddceb7f5d83add41503b760724a7fa8cedc6dcf721959a108582202fi0",
     "contract_type": "RGB21 (UDA)",
     "description": "Membership token for the RGB Vanguard.",
     "supply": 1,
@@ -25,55 +25,55 @@
   },
   {
     "rgb_number": 16,
-    "inscription_id": "a6d23e65b2eced653c0f0bc09d562c29865546ce95709ac7b50965b290a6f62di0",
-    "contract_type": "RGB21 (UDA)",
-    "description": "Digital land deed on the Bitcoin Network.",
-    "supply": 1,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 15,
-    "inscription_id": "c7562adddebb4a6c395a8cef6217b47a7073cbae7481b1c785fa105daaf85763i0",
-    "contract_type": "RGB20 (Fungible)",
-    "description": "A unique digital asset representing an ancient artifact.",
-    "supply": 1000000,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 14,
-    "inscription_id": "7dbb9ce663eb6d8aa57b9e175d131fd645f474679f5b060eb8bb9d2bb5de5a26i0",
-    "contract_type": "RGB21 (UDA)",
-    "description": "Digital land deed on the Bitcoin Network.",
-    "supply": 1,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 13,
-    "inscription_id": "7cf7da6a14f5d914cc5de64f754ec25b400db00366ccd40d4f174a2b3167e8bai0",
-    "contract_type": "RGB21 (UDA)",
-    "description": "A unique digital asset representing an ancient artifact.",
-    "supply": 1,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 12,
-    "inscription_id": "3fc9df21e1ce115782a0f4d013c21db5123ca2961a4f87fc3f440d612a230705i0",
-    "contract_type": "RGB20 (Fungible)",
-    "description": "Digital land deed on the Bitcoin Network.",
-    "supply": 1000000,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 11,
-    "inscription_id": "d89c875d99b5b0669c2adffc412dbee7ac27e4d9df43c8aa5b5c792cb36717a8i0",
+    "inscription_id": "90ac8c41605c7298f029e7f69e2fad75c80dd8fa504265ed5b75dcd8ae8a026bi0",
     "contract_type": "RGB21 (UDA)",
     "description": "A collectible trading card series, 1st edition.",
     "supply": 1,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
+    "rgb_number": 15,
+    "inscription_id": "462fed5ecb6f13b3a6b53efac25fa436eeffa7ae47672c84c58618623b357fd2i0",
+    "contract_type": "RGB20 (Fungible)",
+    "description": "Digital land deed on the Bitcoin Network.",
+    "supply": 1000000,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
+    "rgb_number": 14,
+    "inscription_id": "6410ffe94df7dedb6db1639a1d21e0eb250aff8f74a949c4556a432fbad2bc0ei0",
+    "contract_type": "RGB21 (UDA)",
+    "description": "A collectible trading card series, 1st edition.",
+    "supply": 1,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
+    "rgb_number": 13,
+    "inscription_id": "8a4b5b056393213af2d05961718eb1e13cd4e6f578071d43633dba5f5314974bi0",
+    "contract_type": "RGB21 (UDA)",
+    "description": "Standard fungible token for utility access.",
+    "supply": 1,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
+    "rgb_number": 12,
+    "inscription_id": "bceacf86a16596bb465fcbc69ff38fa3abc9ba892bad1481309b1802e923fe62i0",
+    "contract_type": "RGB20 (Fungible)",
+    "description": "Membership token for the RGB Vanguard.",
+    "supply": 1000000,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
+    "rgb_number": 11,
+    "inscription_id": "d8c00d6030a595bf6f8781a763e99fc1389955f6dc7ca6aac10afb15c7ac110di0",
+    "contract_type": "RGB21 (UDA)",
+    "description": "Digital land deed on the Bitcoin Network.",
+    "supply": 1,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
     "rgb_number": 10,
-    "inscription_id": "e02ac8b709cc72b230a1e0a8f9b87e0f8eb4145f8f98973788080bd61d00c3fci0",
+    "inscription_id": "cbb146b54f9e2e8825c96ece0a85b2ea1731d7161bee63c735f39b5e229737d3i0",
     "contract_type": "RGB21 (UDA)",
     "description": "Membership token for the RGB Vanguard.",
     "supply": 1,
@@ -81,39 +81,39 @@
   },
   {
     "rgb_number": 9,
-    "inscription_id": "d860494a4d623671a9680d9357ea4f6628db245ad71529bc9d393ca3c35abb7bi0",
+    "inscription_id": "1772efea8e00adc1087e48d9fa8613fe3749ad12c81f8b49c275cc971aff729di0",
     "contract_type": "RGB20 (Fungible)",
-    "description": "Digital land deed on the Bitcoin Network.",
+    "description": "Membership token for the RGB Vanguard.",
     "supply": 1000000,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 8,
-    "inscription_id": "0cfa1ec3fe7660e7bff22ae48b760a6eac1485fe551882143467ab67ed62dd39i0",
+    "inscription_id": "407ed126779e3b9d819e8a1f373cd64696cd7ab08d804a6800a0e48fda0e65d0i0",
     "contract_type": "RGB21 (UDA)",
-    "description": "Standard fungible token for utility access.",
+    "description": "Membership token for the RGB Vanguard.",
     "supply": 1,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 7,
-    "inscription_id": "a21135c85a09e2c9532d253030d19ef0d97c5b7645709488ac93b4c90e15a462i0",
+    "inscription_id": "86ec6a9fe83686ab7374665e596a92ba6b3e9a8434c3762df75dd32a459c5133i0",
     "contract_type": "RGB21 (UDA)",
-    "description": "A unique digital asset representing an ancient artifact.",
+    "description": "Membership token for the RGB Vanguard.",
     "supply": 1,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 6,
-    "inscription_id": "c91c3c9ca6176721f17abb04019bd39abd56585a62c2f14671298ac0b8ef657di0",
+    "inscription_id": "12932c12f91a25cb7246ec0df0ab4fb1368b5fa0ff56f14d9db1aff9126b8f79i0",
     "contract_type": "RGB20 (Fungible)",
-    "description": "A collectible trading card series, 1st edition.",
+    "description": "A unique digital asset representing an ancient artifact.",
     "supply": 1000000,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 5,
-    "inscription_id": "084059c97f7e91ff50808a337362a5cff07d010efd5b0c9eed5f8fe0be83a54fi0",
+    "inscription_id": "ab1e92fe7cd055afbedd528cfac56fbe18d337d534cf64b6e8707a6df2dd2c38i0",
     "contract_type": "RGB21 (UDA)",
     "description": "Digital land deed on the Bitcoin Network.",
     "supply": 1,
@@ -121,15 +121,15 @@
   },
   {
     "rgb_number": 4,
-    "inscription_id": "148ca8c70ec39ce2f7378ecaab70e6413757f35f194aba9be64af310fdc8e9dei0",
+    "inscription_id": "51fb3facbf9b61c4c48ddcee75624b6b8ed0c730786e8fc9ce950b4be6f1e94bi0",
     "contract_type": "RGB21 (UDA)",
-    "description": "Standard fungible token for utility access.",
+    "description": "Membership token for the RGB Vanguard.",
     "supply": 1,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
     "rgb_number": 3,
-    "inscription_id": "42048c2027a360869fa1d5c1f696d277452aa5ecb6d5384cea07f10b10c4b828i0",
+    "inscription_id": "4b6de40195b5f9fe754d041efa1318a764bce5269847855311194f24f8ec353ei0",
     "contract_type": "RGB20 (Fungible)",
     "description": "Membership token for the RGB Vanguard.",
     "supply": 1000000,
@@ -137,25 +137,25 @@
   },
   {
     "rgb_number": 2,
-    "inscription_id": "fcabff6bc9d1357a6897c789e7d29595e189428a7447097a7bf1bba9d84fbe9di0",
-    "contract_type": "RGB21 (UDA)",
-    "description": "Digital land deed on the Bitcoin Network.",
-    "supply": 1,
-    "created_at": "2024-05-21T10:00:00Z"
-  },
-  {
-    "rgb_number": 1,
-    "inscription_id": "f4638cc6177c3581d4174fa859beb5badde15d7243934112e39068cf8fe2d249i0",
+    "inscription_id": "1b62b2e430981925baf1772d77e15d8ed2490147356959e7a8ada9e6fbb2c004i0",
     "contract_type": "RGB21 (UDA)",
     "description": "Standard fungible token for utility access.",
     "supply": 1,
     "created_at": "2024-05-21T10:00:00Z"
   },
   {
-    "rgb_number": 0,
-    "inscription_id": "5d760669119d19656583000b76a3380791def4873e9898ede6810dd409fbfd3di0",
-    "contract_type": "RGB20 (Fungible)",
+    "rgb_number": 1,
+    "inscription_id": "bca60c1fc51d504283afd2b4363309187732c7aa60ff62443654637bd1dfd487i0",
+    "contract_type": "RGB21 (UDA)",
     "description": "Membership token for the RGB Vanguard.",
+    "supply": 1,
+    "created_at": "2024-05-21T10:00:00Z"
+  },
+  {
+    "rgb_number": 0,
+    "inscription_id": "e2643053adbd0c51d7aa7cba4130c10cf54b2b9d5873573acd0fc64f196e2957i0",
+    "contract_type": "RGB20 (Fungible)",
+    "description": "Standard fungible token for utility access.",
     "supply": 1000000,
     "created_at": "2024-05-21T10:00:00Z"
   }

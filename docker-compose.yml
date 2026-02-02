@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  sequencer:
+    build: .
+    container_name: rgb-sequencer
+    ports:
+      - "8000:8000"
+    environment:
+      - RGB_SCANNER_PATH=/usr/local/bin/rgb-scanner
+    restart: unless-stopped
+    # Mount invocations so generated data persists
+    volumes:
+      - ./explorer/inscriptions:/app/explorer/inscriptions
+      - ./explorer/index.json:/app/explorer/index.json
