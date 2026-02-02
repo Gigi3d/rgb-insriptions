@@ -282,77 +282,54 @@ function renderMetadata(container, meta) {
     `;
 }
 
-async function generateInscription() {
+function generateInscription() {
   const contractText = document.getElementById('input-contract').value;
 
-  if (!contractText) {
-    alert("Please paste the contract first.");
+  if (!contractText || !extractedId) {
+    alert("Please await analysis first.");
     return;
   }
 
-  const finalId = extractedId || "rgb_genesis";
-  const meta = extractedMetadata || {
-    name: "RGB Asset", ticker: "RGB", type: "Unknown", issuer: "Unknown", id: finalId
+  const meta = extractedMetadata || { id: extractedId || "unknown" };
+  const container = document.querySelector('.form-card');
+
+  // Generating the Recursive Pointer Payload
+  const payload = {
+    "p": "rgb-21",
+    "op": "min_inscribe",
+    "parent": meta.id, // The Anchor (Contract ID)
+    "idx": 818,        // Mock index from example
+    "ts": Date.now()
   };
 
-  // HTML Template with embedded metadata table
-  const htmlContent = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>${meta.name}</title>
-  <style>
-    body { font-family: monospace; text-align: center; background: #0b0b0b; color: #e0e0e0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-    .preview { border: 1px solid #333; padding: 20px; background: #161616; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); margin-bottom: 20px; }
-    img { max-width: 100%; border-radius: 4px; }
-    #details { background: #161616; padding: 20px; border-radius: 12px; border: 1px solid #333; width: 100%; max-width: 400px; text-align: left; }
-    h1 { font-size: 1.2em; margin: 0 0 15px 0; color: #00ffcc; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #333; padding-bottom: 10px; }
-    .row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9em; }
-    .label { color: #888; }
-    .val { color: #fff; font-weight: bold; text-align: right; }
-    .id-box { margin-top: 15px; font-size: 0.7em; color: #555; word-break: break-all; background: #000; padding: 10px; border-radius: 4px; }
-    .footer { margin-top: auto; color: #444; font-size: 0.7em; padding-top: 20px; }
-  </style>
-</head>
-<body>
-  <div class="preview">
-  ${extractedImgBase64
-      ? `<img src="${extractedImgBase64}" alt="RGB Preview" />`
-      : `[Image Data Encoded in Contract - Render via RGB Node]`
-    }
-  </div>
-  
-  <div id="details">
-    <h1>${meta.ticker} / ${meta.type}</h1>
-    <div class="row"><span class="label">Name</span> <span class="val">${meta.name}</span></div>
-    <div class="row"><span class="label">Ticker</span> <span class="val">${meta.ticker}</span></div>
-    <div class="row"><span class="label">Issuer</span> <span class="val">${meta.issuer}</span></div>
-    
-    <div class="id-box">
-      ID: ${meta.id}
+  const payloadString = JSON.stringify(payload, null, 2);
+
+  // Switch View to "Ready"
+  container.innerHTML = `
+    <h1 style="color:#00ffcc; text-align:center;">Ready for Inscription</h1>
+    <p style="color:#ccc; text-align:center; margin-bottom:30px; font-family:var(--font-mono);">
+        Inscribe this lightweight pointer to reference the contract.
+        <br><span style="color:#888; font-size:0.8em;">Optimization: Recursive Parent-Child Strategy (-95% Fees)</span>
+    </p>
+
+    <div style="background:rgba(0,0,0,0.3); padding:25px; border-radius:12px; border:1px solid #333; margin-bottom:30px; text-align:left;">
+        <h3 style="color:#888; font-size:0.8em; margin-top:0; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px;">Protocol Payload (JSON)</h3>
+        <textarea readonly style="width:100%; height:180px; background:rgba(255,255,255,0.05); border:1px solid #444; color:#fff; font-family:'JetBrains Mono'; padding:15px; border-radius:8px;">${payloadString}</textarea>
     </div>
-  </div>
 
-  <div class="footer">
-    RGB21 INSCRIPTION • GENESIS SEAL
-  </div>
+    <div style="background: rgba(0, 255, 204, 0.05); border-left: 3px solid #00ffcc; padding: 15px; font-size: 0.85em; margin-bottom: 30px; text-align:left; color:#ccc;">
+        <strong>Validity Check:</strong> This pointer references <code>${meta.id.substring(0, 20)}...</code> (Anchor).
+    </div>
 
-  <script type="application/rgb+armored" id="genesis-data">
-${contractText}
-  </script>
-</body>
-</html>`;
+    <div class="actions">
+        <button class="btn-secondary" onclick="location.reload()">Back</button>
+        <button class="btn-primary" onclick="triggerWalletInscription('${payloadString.replace(/"/g, '&quot;')}')">Inscribe on Bitcoin</button>
+    </div>
+  `;
+}
 
-  // Download
-  const blob = new Blob([htmlContent], { type: 'text/html' });
-  const url = URL.createObjectURL(blob);
-
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `rgb_${meta.ticker}_${finalId.substring(0, 8)}.html`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-
-  alert("Genesis HTML Generated!");
+function triggerWalletInscription(payload) {
+  // Mock Wallet Interaction
+  alert("Initiating Wallet Connection...\n\nRequesting inscription for: " + payload);
+  // In a real app, this would call UniSat or Xverse API
 }

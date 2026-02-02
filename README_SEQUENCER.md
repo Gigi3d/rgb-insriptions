@@ -120,6 +120,14 @@ Minted once, this inscription acts as the on-chain singularity for the entire co
 *The Distributed Key.*
 These are the lightweight recursive inscriptions distributed to holders. Rather than duplicating data, they serve as cryptographic pointers to the Anchor.
 *   **Payload:** minimal JSON/HTML establishing the `rgb:csg` link.
+    ```json
+    {
+      "p": "rgb-21",
+      "op": "min_inscribe",
+      "parent": "rgb:wW5...",
+      "idx": 818
+    }
+    ```
 *   **Economic Profile:** Micro-transactional Operational expenditure (OpEx).
 
 ### 🏆 Strategic Advantages
